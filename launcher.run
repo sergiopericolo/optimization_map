@@ -1,0 +1,205 @@
+
+# === LAUNCHER ============================================================================== # 
+
+# comando per lanciare
+#include '/Users/sergiodilapi/Desktop/progetto_ricerca_operativa/codice_progetto/launcher.run';
+
+
+
+# problema originale
+
+model '/Users/sergiodilapi/Desktop/progetto_ricerca_operativa/codice_progetto/progetto_35.mod';
+data '/Users/sergiodilapi/Desktop/progetto_ricerca_operativa/codice_progetto/progetto_35.dat';
+
+solve;
+display y;
+
+printf "Problema originale: \nStazioni aperte:  " > "/Users/sergiodilapi/Desktop/progetto_ricerca_operativa/codice_progetto/risultati.txt";
+for {j in stazioni: y[j] = 1} {
+    printf "%s  ", j >> "/Users/sergiodilapi/Desktop/progetto_ricerca_operativa/codice_progetto/risultati.txt";
+}
+printf "  ==>  Costo totale = %f\n\n", CostoTotale >> "/Users/sergiodilapi/Desktop/progetto_ricerca_operativa/codice_progetto/risultati.txt";
+
+reset;
+
+
+
+# variazione 0
+
+model '/Users/sergiodilapi/Desktop/progetto_ricerca_operativa/codice_progetto/progetto_35.mod';
+data '/Users/sergiodilapi/Desktop/progetto_ricerca_operativa/codice_progetto/progetto_35_variazione_0.dat';
+
+solve;
+display y;
+
+printf "Variazione 0: \nStazioni aperte:  " >> "/Users/sergiodilapi/Desktop/progetto_ricerca_operativa/codice_progetto/risultati.txt";
+for {j in stazioni: y[j] = 1} {
+    printf "%s  ", j >> "/Users/sergiodilapi/Desktop/progetto_ricerca_operativa/codice_progetto/risultati.txt";
+}
+printf "  ==>  Costo totale = %f\n\n", CostoTotale >> "/Users/sergiodilapi/Desktop/progetto_ricerca_operativa/codice_progetto/risultati.txt";
+
+reset;
+
+
+
+# variazione 1
+
+model '/Users/sergiodilapi/Desktop/progetto_ricerca_operativa/codice_progetto/progetto_35.mod';
+data '/Users/sergiodilapi/Desktop/progetto_ricerca_operativa/codice_progetto/progetto_35_variazione_1.dat';
+
+solve;
+display y;
+
+printf "Variazione 1: \nStazioni aperte:  " >> "/Users/sergiodilapi/Desktop/progetto_ricerca_operativa/codice_progetto/risultati.txt";
+for {j in stazioni: y[j] = 1} {
+    printf "%s  ", j >> "/Users/sergiodilapi/Desktop/progetto_ricerca_operativa/codice_progetto/risultati.txt";
+}
+printf "  ==>  Costo totale = %f\n\n", CostoTotale >> "/Users/sergiodilapi/Desktop/progetto_ricerca_operativa/codice_progetto/risultati.txt";
+
+reset;
+
+
+
+# variazione 2
+
+model '/Users/sergiodilapi/Desktop/progetto_ricerca_operativa/codice_progetto/progetto_35.mod';
+data '/Users/sergiodilapi/Desktop/progetto_ricerca_operativa/codice_progetto/progetto_35_variazione_2.dat';
+
+solve;
+display y;
+
+printf "Variazione 2: \nStazioni aperte:  " >> "/Users/sergiodilapi/Desktop/progetto_ricerca_operativa/codice_progetto/risultati.txt";
+for {j in stazioni: y[j] = 1} {
+    printf "%s  ", j >> "/Users/sergiodilapi/Desktop/progetto_ricerca_operativa/codice_progetto/risultati.txt";
+}
+printf "  ==>  Costo totale = %f\n\n", CostoTotale >> "/Users/sergiodilapi/Desktop/progetto_ricerca_operativa/codice_progetto/risultati.txt";
+
+reset;
+
+
+
+# variazione 3
+
+model '/Users/sergiodilapi/Desktop/progetto_ricerca_operativa/codice_progetto/progetto_35.mod';
+data '/Users/sergiodilapi/Desktop/progetto_ricerca_operativa/codice_progetto/progetto_35_variazione_3.dat';
+
+solve;
+display y;
+
+printf "Variazione 3: \nStazioni aperte:  " >> "/Users/sergiodilapi/Desktop/progetto_ricerca_operativa/codice_progetto/risultati.txt";
+for {j in stazioni: y[j] = 1} {
+    printf "%s  ", j >> "/Users/sergiodilapi/Desktop/progetto_ricerca_operativa/codice_progetto/risultati.txt";
+}
+printf "  ==>  Costo totale = %f\n\n", CostoTotale >> "/Users/sergiodilapi/Desktop/progetto_ricerca_operativa/codice_progetto/risultati.txt";
+
+reset;
+
+
+
+# variazione 4
+
+model '/Users/sergiodilapi/Desktop/progetto_ricerca_operativa/codice_progetto/progetto_35.mod';
+data '/Users/sergiodilapi/Desktop/progetto_ricerca_operativa/codice_progetto/progetto_35_variazione_4.dat';
+
+solve;
+display y;
+
+printf "Variazione 4: \nStazioni aperte:  " >> "/Users/sergiodilapi/Desktop/progetto_ricerca_operativa/codice_progetto/risultati.txt";
+for {j in stazioni: y[j] = 1} {
+    printf "%s  ", j >> "/Users/sergiodilapi/Desktop/progetto_ricerca_operativa/codice_progetto/risultati.txt";
+}
+printf "  ==>  Costo totale = %f\n\n", CostoTotale >> "/Users/sergiodilapi/Desktop/progetto_ricerca_operativa/codice_progetto/risultati.txt";
+
+reset;
+
+
+
+# variazione 5
+
+model '/Users/sergiodilapi/Desktop/progetto_ricerca_operativa/codice_progetto/progetto_35.mod';
+data '/Users/sergiodilapi/Desktop/progetto_ricerca_operativa/codice_progetto/progetto_35_variazione_5.dat';
+
+solve;
+display y;
+
+printf "Variazione 5: \nStazioni aperte:  " >> "/Users/sergiodilapi/Desktop/progetto_ricerca_operativa/codice_progetto/risultati.txt";
+for {j in stazioni: y[j] = 1} {
+    printf "%s  ", j >> "/Users/sergiodilapi/Desktop/progetto_ricerca_operativa/codice_progetto/risultati.txt";
+}
+printf "  ==>  Costo totale = %f\n\n", CostoTotale >> "/Users/sergiodilapi/Desktop/progetto_ricerca_operativa/codice_progetto/risultati.txt";
+
+reset;
+
+
+
+# variazione 6
+
+model '/Users/sergiodilapi/Desktop/progetto_ricerca_operativa/codice_progetto/progetto_35.mod';
+data '/Users/sergiodilapi/Desktop/progetto_ricerca_operativa/codice_progetto/progetto_35_variazione_6.dat';
+
+solve;
+display y;
+
+printf "Variazione 6: \nStazioni aperte:  " >> "/Users/sergiodilapi/Desktop/progetto_ricerca_operativa/codice_progetto/risultati.txt";
+for {j in stazioni: y[j] = 1} {
+    printf "%s  ", j >> "/Users/sergiodilapi/Desktop/progetto_ricerca_operativa/codice_progetto/risultati.txt";
+}
+printf "  ==>  Costo totale = %f\n\n", CostoTotale >> "/Users/sergiodilapi/Desktop/progetto_ricerca_operativa/codice_progetto/risultati.txt";
+
+reset;
+
+
+
+# variazione 7
+
+model '/Users/sergiodilapi/Desktop/progetto_ricerca_operativa/codice_progetto/progetto_35.mod';
+data '/Users/sergiodilapi/Desktop/progetto_ricerca_operativa/codice_progetto/progetto_35_variazione_7.dat';
+
+solve;
+display y;
+
+printf "Variazione 7: \nStazioni aperte:  " >> "/Users/sergiodilapi/Desktop/progetto_ricerca_operativa/codice_progetto/risultati.txt";
+for {j in stazioni: y[j] = 1} {
+    printf "%s  ", j >> "/Users/sergiodilapi/Desktop/progetto_ricerca_operativa/codice_progetto/risultati.txt";
+}
+printf "  ==>  Costo totale = %f\n\n", CostoTotale >> "/Users/sergiodilapi/Desktop/progetto_ricerca_operativa/codice_progetto/risultati.txt";
+
+reset;
+
+
+
+# variazione 8
+
+model '/Users/sergiodilapi/Desktop/progetto_ricerca_operativa/codice_progetto/progetto_35.mod';
+data '/Users/sergiodilapi/Desktop/progetto_ricerca_operativa/codice_progetto/progetto_35_variazione_8.dat';
+
+solve;
+display y;
+
+printf "Variazione 8: \nStazioni aperte:  " >> "/Users/sergiodilapi/Desktop/progetto_ricerca_operativa/codice_progetto/risultati.txt";
+for {j in stazioni: y[j] = 1} {
+    printf "%s  ", j >> "/Users/sergiodilapi/Desktop/progetto_ricerca_operativa/codice_progetto/risultati.txt";
+}
+printf "  ==>  Costo totale = %f\n\n", CostoTotale >> "/Users/sergiodilapi/Desktop/progetto_ricerca_operativa/codice_progetto/risultati.txt";
+
+reset;
+
+
+
+# variazione 9
+
+model '/Users/sergiodilapi/Desktop/progetto_ricerca_operativa/codice_progetto/progetto_35.mod';
+data '/Users/sergiodilapi/Desktop/progetto_ricerca_operativa/codice_progetto/progetto_35_variazione_9.dat';
+
+solve;
+display y;
+
+printf "Variazione 9: \nStazioni aperte:  " >> "/Users/sergiodilapi/Desktop/progetto_ricerca_operativa/codice_progetto/risultati.txt";
+for {j in stazioni: y[j] = 1} {
+    printf "%s  ", j >> "/Users/sergiodilapi/Desktop/progetto_ricerca_operativa/codice_progetto/risultati.txt";
+}
+printf "  ==>  Costo totale = %f\n\n", CostoTotale >> "/Users/sergiodilapi/Desktop/progetto_ricerca_operativa/codice_progetto/risultati.txt";
+
+reset;
+
+

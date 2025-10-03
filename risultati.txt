@@ -1,0 +1,33 @@
+Problema originale: 
+Stazioni aperte:  3  6    ==>  Costo totale = 16.000000
+
+Variazione 0: 
+Stazioni aperte:  3  6    ==>  Costo totale = 26.320000
+
+Variazione 1: 
+Stazioni aperte:  3  6    ==>  Costo totale = 25.680000
+
+Variazione 2: 
+Stazioni aperte:  3  6    ==>  Costo totale = 24.080000
+
+Variazione 3: 
+Stazioni aperte:  3  6    ==>  Costo totale = 31.520000
+
+Variazione 4: 
+Stazioni aperte:  3  6    ==>  Costo totale = 38.000000
+
+Variazione 5: 
+Stazioni aperte:  3  6    ==>  Costo totale = 33.520000
+
+Variazione 6: 
+Stazioni aperte:  3  6    ==>  Costo totale = 28.080000
+
+Variazione 7: 
+Stazioni aperte:  3  6    ==>  Costo totale = 31.680000
+
+Variazione 8: 
+Stazioni aperte:  3  6    ==>  Costo totale = 34.320000
+
+Variazione 9: 
+Stazioni aperte:  3  6    ==>  Costo totale = 26.000000
+
